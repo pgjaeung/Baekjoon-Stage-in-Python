@@ -1,0 +1,15 @@
+h,m = map(int, input().split())
+time = int(input())
+if h>=0:
+    if time+m >= 60 :
+        h=(int)((time+m)/60)+h
+        h=h%24
+        if (m+time) % 60 == 0:
+            m=0
+            print(h,m)
+        else:
+            m=(time+m)%60
+            print(h,m)
+    else:
+        m=(time+m)%60
+        print(h,m)
