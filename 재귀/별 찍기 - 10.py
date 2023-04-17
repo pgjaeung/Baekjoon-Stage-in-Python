@@ -3,7 +3,7 @@ sys.setrecursionlimit(10 ** 6)
 
 def star(len):
     if len == 1:
-        return ['*']
+        return '*'
     stars = star(len//3)
     l = []
 
@@ -16,4 +16,5 @@ def star(len):
     return l
 
 n = int(input())
+
 print('\n'.join(star(n)))
